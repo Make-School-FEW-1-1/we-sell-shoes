@@ -100,3 +100,42 @@ HERO
     transform: scale(1.02)
     box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
 }
+
+/******
+CLIENTS
+******/
+
+.clients {
+    height: 10rem;
+    width: 100%;
+    background: #ecf0f1;
+}
+
+.client-images {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    width: 100%;
+}
+
+.clients-header {
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
+    font-style: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.client-images img {
+    transition: all 200ms;
+}
+
+.client-images img:hover {
+    transform: scale(1.2);
+}
