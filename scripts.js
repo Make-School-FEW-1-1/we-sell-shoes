@@ -1,3 +1,5 @@
+///TESTIMONALS///
+
 //dots
 const nextNext = document.getElementById('next-next')
 const next = document.getElementById('next');
@@ -70,3 +72,20 @@ next.addEventListener("click", function() {
 prev.addEventListener("click", function() {
     dotClick('second', 'third', 'first');
 })
+
+///FAQ///
+
+//declare const
+const acc = document.getElementsByClassName("accordion");
+
+for(let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if(panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    })
+}
