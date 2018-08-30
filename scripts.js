@@ -89,3 +89,29 @@ for(let i = 0; i < acc.length; i++) {
         }
     })
 }
+
+///POPUP///
+
+//const
+const popUp = document.getElementById('pop-up');
+const popUpLayer = document.getElementById('pop-up-layer');
+const closeModal = document.getElementById('pop-up-layer');
+
+//nav button
+const subBtn = document.getElementById('sub-btn')
+
+subBtn.addEventListener("click", function() {
+    popUpLayer.style.display = 'flex';
+})
+
+closeModal.addEventListener("click", function() {
+    popUpLayer.style.display = 'none';
+})
+
+let popUpSeconds = 40;
+
+let popUpFun = window.setInterval(function() {
+    popUpLayer.style.display = 'flex';
+
+    window.clearInterval(popUpFun);
+}, popUpSeconds * 1000);
