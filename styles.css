@@ -477,3 +477,22 @@ TESTIMONALS
 .dot:hover {
   background: black;
 }
+
+/**********
+SUBSCRIBE 3
+**********/
+
+.subscribe-3 {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
